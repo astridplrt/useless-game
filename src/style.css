@@ -1,0 +1,57 @@
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
+
+header {
+  padding: 20px;
+}
+
+h1 {
+  margin: 0;
+  text-align: center;
+}
+
+footer {
+  padding: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+
+main {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+h2 {
+  text-align: center;
+  margin: 0;
+  padding: 20px 0;
+}
+
+.card {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#mousePositionCard {
+  border: rgb(17, 39, 126) 1px solid;
+  width: fit-content;
+  padding: 20px;
+  width: 30%;
+}
+
+#mousePositionCard h4 {
+  margin: 0;
+  text-align: center;
+}
+
+#mousePosition {
+  padding: 20px 0;
+}
