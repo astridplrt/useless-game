@@ -1,31 +1,28 @@
-import './style.css'
+import "./style.css";
+import "./config.js";
 
-const clientPosition = document.getElementById("clientPosition");
-const offsetPosition = document.getElementById("offsetPosition");
-const pagePosition = document.getElementById("pagePosition");
-const screenPosition = document.getElementById("screenPosition");
-const movementPosition = document.getElementById("movementPosition");
+const clientPositionSpan = document.querySelector("#clientPosition + span");
+const offsetPositionSpan = document.querySelector("#offsetPosition + span");
+const pagePositionSpan = document.querySelector("#pagePosition + span");
+const screenPositionSpan = document.querySelector("#screenPosition + span");
+const movementPositionSpan = document.querySelector("#movementPosition + span");
 
-let textClient = "clientX/clientY : ";
-let textOffset = "offsetX/offsetY : ";
-let textPage = "pageX/pageY : ";
-let textScreen = "screenX/screenY : ";
-let textMovement = "movementX/movementY : ";
+let textClientSpan = "";
+let textOffsetSpan = "";
+let textPageSpan = "";
+let textScreenSpan = "";
+let textMovementSpan = "";
 
-let textClientExplain = " dans les coordonnées locales (contenu du DOM)";
-let textOffsetExplain = " par rapport à cet encadré (sur lequel on écoute l'event)";
-let textPageExplain = " par rapport au document entier";
-let textScreenExplain = " par rapport à à la fenêtre du navigateur";
-let textMovementExplain = " par rapport à sa position lors du dernier event mousemove";
+playZone.addEventListener("mousemove", (event) => {
+  textClientSpan = `${event.clientX} / ${event.clientY}`;
+  textOffsetSpan = `${event.offsetX} / ${event.offsetY}`;
+  textPageSpan = `${event.pageX} / ${event.pageY}`;
+  textScreenSpan = `${event.screenX} / ${event.screenY}`;
+  textMovementSpan = `${event.movementX} / ${event.movementY}`;
 
-clientPosition.innerText = textClient;
-offsetPosition.innerText = textOffset;
-pagePosition.innerText = textPage;
-screenPosition.innerText = textScreen;
-movementPosition.innerText = textMovement;
-
-clientPosition.setAttribute("title", textClientExplain)
-offsetPosition.setAttribute("title", textOffsetExplain)
-pagePosition.setAttribute("title", textPageExplain)
-screenPosition.setAttribute("title", textScreenExplain)
-movementPosition.setAttribute("title", textMovementExplain)
+  clientPositionSpan.innerText = textClientSpan;
+  offsetPositionSpan.innerText = textOffsetSpan;
+  pagePositionSpan.innerText = textPageSpan;
+  screenPositionSpan.innerText = textScreenSpan;
+  movementPositionSpan.innerText = textMovementSpan;
+});

@@ -58,7 +58,7 @@ h2 {
 #mousePositionCard {
   border: #45CB85 1px solid;
   width: fit-content;
-  width: 30%;
+  min-width: 280px;
 }
 
 #mousePositionCard h4 {
@@ -66,6 +66,11 @@ h2 {
   text-align: center;
 }
 
-p {
+#mousePositionCard .mousePositions {
   margin: 16px 20px;
+}
+
+#mousePositionCard p, span {
+  width: fit-content;
+  display: inline;
 }

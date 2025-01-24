@@ -1,35 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+    <script type="module" src="/src/main.js" defer></script>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Vite App</title>
-  <script type="module" src="/src/main.js" defer></script>
-</head>
+  <body>
+    <header>
+      <h1>Welcome to Happy Land !</h1>
+    </header>
 
-<body>
-  <header>
-    <h1>Welcome to Happy Land !</h1>
-  </header>
-
-  <main>
-    <h2>Play with the mouse !</h2>
-    <div id="playZone">
-      <div class="card">
-        <div id="mousePositionCard">
-          <h4>Position de la souris</h4>
-          <p id="clientPosition"></p>
-          <p id="offsetPosition"></p>
-          <p id="pagePosition"></p>
-          <p id="screenPosition"></p>
-          <p id="movementPosition"></p>
+    <main>
+      <h2>Play with the mouse !</h2>
+      <div id="playZone">
+        <div class="card">
+          <div id="mousePositionCard">
+            <h4>Position de la souris</h4>
+            <div class="mousePositions">
+              <p id="clientPosition"></p>
+              <span></span>
+            </div>
+            <div class="mousePositions">
+              <p id="offsetPosition"></p>
+              <span></span>
+            </div>
+            <div class="mousePositions">
+              <p id="pagePosition"></p>
+              <span></span>
+            </div>
+            <div class="mousePositions">
+              <p id="screenPosition"></p>
+              <span></span>
+            </div>
+            <div class="mousePositions">
+              <p id="movementPosition"></p>
+              <span></span>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-  </main>
+    </main>
 
-  <footer>I am a footer</footer>
-</body>
-
+    <footer>I am a footer</footer>
+  </body>
 </html>
