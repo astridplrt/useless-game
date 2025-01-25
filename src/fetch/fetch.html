@@ -3,9 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
-    <script src="/src/config.js" defer></script>
+    <title>Happy Land</title>
     <script type="module" src="/src/main.js" defer></script>
+    <script type="module" src="/src/fetch/fetch.js" defer></script>
   </head>
 
   <body>
@@ -19,7 +19,14 @@
     </header>
 
     <main>
-        <h2>Who's a good boy ? Fetch!</h2>
+      <h2>Who's a good boy ? Fetch!</h2>
+      <div id="fetchBox">
+        <button id="fetchButton">Fetch!</button>
+        <div class="card">
+          <h4 id="fetchText"></h4>
+          <button id="resetButton">Reset</button>
+        </div>
+      </div>
     </main>
 
     <footer>I am a footer</footer>

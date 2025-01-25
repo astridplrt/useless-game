@@ -1,3 +1,6 @@
+/*****************************/
+/*** Mousemove page (main) ***/
+
 /*** HTML elements ***/
 const playZone = document.getElementById("playZone");
 
@@ -13,7 +16,6 @@ const pagePositionSpan = document.querySelector("#pagePosition + span");
 const screenPositionSpan = document.querySelector("#screenPosition + span");
 const movementPositionSpan = document.querySelector("#movementPosition + span");
 
-
 /*** texts ***/
 const textClient = "clientX/clientY : ";
 const textOffset = "offsetX/offsetY : ";
@@ -26,7 +28,6 @@ const textOffsetExplain = " par rapport à cet encadré (sur lequel on écoute l
 const textPageExplain = " par rapport au document entier";
 const textScreenExplain = " par rapport à à la fenêtre du navigateur";
 const textMovementExplain = " par rapport à sa position lors du dernier event mousemove";
-
 
 /*** texts positioning ***/
 clientPosition.innerText = textClient;
