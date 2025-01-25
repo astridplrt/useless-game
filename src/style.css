@@ -7,14 +7,35 @@ body {
 }
 
 header {
-  padding: 20px;
+  padding: 32px;
   background-color: #ff006e;
   color: white;
 }
 
-h1 {
+header h1 {
   margin: 0;
   text-align: center;
+}
+
+header ul {
+  list-style: none;
+  transform: none;
+  padding: 0;
+  margin: 32px 0 0 0;
+  display: flex;
+  justify-content: center;
+}
+
+header li {
+  padding: 0 24px;
+  margin: 0;
+}
+
+header li a {
+  text-decoration: none;
+  color: inherit;
+  font-weight: bold;
+  font-size: 1.1em;
 }
 
 footer {
