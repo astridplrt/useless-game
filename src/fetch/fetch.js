@@ -1,3 +1,4 @@
+import "../style.css"
 import "./fetch.css"
 
 const fetchText = document.getElementById("fetchText");
