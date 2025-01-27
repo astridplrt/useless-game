@@ -5,7 +5,7 @@ const fetchText = document.getElementById("fetchText");
 const fetchButton = document.getElementById("fetchButton");
 const resetButton = document.getElementById("resetButton");
 
-fetchText.innerText = "Country : ";
+fetchText.innerText = "I am a good boy ?";
 
 fetchButton.addEventListener("click", () => {
     fetch("https://ip-info.workers.rocks/?format=json")

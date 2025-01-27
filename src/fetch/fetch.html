@@ -18,13 +18,58 @@
     </header>
 
     <main>
-      <h2>Who's a good boy ? Fetch!</h2>
-      <div id="fetchBox">
-        <button id="fetchButton">Fetch!</button>
-        <div class="card">
-          <h4 id="fetchText"></h4>
-          <button id="resetButton">Reset</button>
+      <h2>Who's a good boy ?</h2>
+      <form method="get" id="fetchForm">
+        <div class="inputs">
+          <label for="name" class="textLabel">What's your name, cutie ?</label>
+          <input 
+            type="text" 
+            name="name" 
+            id="name" 
+            maxlength="100" 
+            placeholder="Bernardo" 
+            required
+          />
         </div>
+        <div class="inputs">
+        <p class="radioTitle">What do you want ?</p>
+          <div class="radioInputs">
+            <div>
+              <label for="walk" class="radioLabel">Go for a walk</label>
+              <input 
+                type="radio" 
+                name="want" 
+                value="walk" 
+                id="walk" 
+                required
+              />
+            </div>
+            <div>
+              <label for="play" class="radioLabel">Play outside</label>
+              <input 
+                type="radio" 
+                name="want" 
+                value="play" 
+                id="play" 
+              />
+            </div>
+            <div>
+              <label for="treat" class="radioLabel">Eat a treat</label>
+              <input 
+                type="radio" 
+                name="want" 
+                value="treat" 
+                id="treat" 
+              />
+            </div>
+          </div>
+        </div>
+        <button id="fetchButton" class="solid-button">Fetch!</button>
+      </form>
+
+      <div id="responseDiv">
+        <h4 id="fetchText"></h4>
+        <button id="resetButton" class="border-button">Reset</button>
       </div>
     </main>
 
