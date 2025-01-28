@@ -22,45 +22,46 @@
       <form method="get" id="fetchForm">
         <div class="inputs">
           <label for="name" class="textLabel">What's your name, cutie ?</label>
-          <input 
-            type="text" 
-            name="name" 
-            id="name" 
-            maxlength="100" 
-            placeholder="Bernardo" 
+          <input
+            type="text"
+            name="name"
+            id="name"
+            maxlength="100"
+            placeholder="Bernardo"
             required
           />
         </div>
         <div class="inputs">
-        <p class="radioTitle">What do you want ?</p>
+          <p class="radioTitle">What do you want ?</p>
           <div class="radioInputs">
             <div>
               <label for="walk" class="radioLabel">Go for a walk</label>
-              <input 
-                type="radio" 
-                name="want" 
-                value="walk" 
-                id="walk" 
-                required
-              />
+              <input type="radio" name="want" value="walk" id="walk" required />
             </div>
             <div>
               <label for="play" class="radioLabel">Play outside</label>
-              <input 
-                type="radio" 
-                name="want" 
-                value="play" 
-                id="play" 
-              />
+              <input type="radio" name="want" value="play" id="play" />
             </div>
             <div>
               <label for="treat" class="radioLabel">Eat a treat</label>
-              <input 
-                type="radio" 
-                name="want" 
-                value="treat" 
-                id="treat" 
-              />
+              <input type="radio" name="want" value="treat" id="treat" />
+            </div>
+          </div>
+        </div>
+        <div class="inputs">
+          <p class="radioTitle">Here buddy, choose your destiny</p>
+          <div class="radioInputs">
+            <div>
+              <label for="bliss" class="radioLabel">Eternal bliss</label>
+              <input type="radio" name="destiny" value="bliss" id="bliss" required />
+            </div>
+            <div>
+              <label for="truth" class="radioLabel">The dread truth</label>
+              <input type="radio" name="destiny" value="truth" id="truth" />
+            </div>
+            <div>
+              <label for="chaos" class="radioLabel">Just chaos</label>
+              <input type="radio" name="destiny" value="chaos" id="chaos" />
             </div>
           </div>
         </div>
@@ -69,6 +70,7 @@
 
       <div id="responseDiv">
         <h4 id="fetchText"></h4>
+        <h4 id="destinyText"></h4>
         <button id="resetButton" class="border-button">Reset</button>
       </div>
     </main>
