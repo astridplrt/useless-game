@@ -30,9 +30,10 @@
             placeholder="Bernardo"
             required
           />
+          <p class="errorText" id="invalidName"></p>
         </div>
         <div class="inputs">
-          <p class="radioTitle">What do you want ?</p>
+          <p class="radioTitle">What do you want to do?</p>
           <div class="radioInputs">
             <div>
               <label for="walk" class="radioLabel">Go for a walk</label>
@@ -47,13 +48,20 @@
               <input type="radio" name="want" value="treat" id="treat" />
             </div>
           </div>
+          <p class="errorText" id="invalidWant"></p>
         </div>
         <div class="inputs">
           <p class="radioTitle">Here buddy, choose your destiny</p>
           <div class="radioInputs">
             <div>
               <label for="bliss" class="radioLabel">Eternal bliss</label>
-              <input type="radio" name="destiny" value="bliss" id="bliss" required />
+              <input
+                type="radio"
+                name="destiny"
+                value="bliss"
+                id="bliss"
+                required
+              />
             </div>
             <div>
               <label for="truth" class="radioLabel">The dread truth</label>
@@ -64,6 +72,7 @@
               <input type="radio" name="destiny" value="chaos" id="chaos" />
             </div>
           </div>
+          <p class="errorText" id="invalidDestiny"></p>
         </div>
         <button id="fetchButton" class="solid-button">Fetch!</button>
       </form>
